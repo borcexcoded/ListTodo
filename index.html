@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListTodo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="time()">
+    <div class="todo-container">
+      <div class="data-hour">
+        <div id="date">Date</div>
+        <div id="hour">Hour</div>
+      </div>
+      <header>
+        <h1>To DO List</h1>
+      </header>
+      <form action="" id="todo-form">
+        <p>Add your task Here</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Type here about your next task"
+          />
+          <button type="submit"><i>+</i></button>
+        </div>
+      </form>
+      <form action="" id="edit-form" class="hide">
+        <p>Edit your task Here</p>
+        <div class="form-control">
+          <input
+            type="text"
+            id="edit-input"
+            placeholder="Type here about your next task"
+          />
+          <button type="submit ">
+            <i class="fa-solid fa fa-check-double"></i>
+          </button>
+        </div>
+        <button id="cancel-edit-btn">Cancel</button>
+      </form>
+      <div class="todo-list" id="todo-list">
+        <div class="todo">
+          <h3>Some Default task</h3>
+          <button class="finish-todo">
+            <i class="fa-solid fa-check"></i>
+          </button>
+          <button class="edit-todo">
+            <i class="fa-solid fa-pen"></i>
+          </button>
+          <button class="remove-todo">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyCeWfkdb-4QMMc1x0_z-Ec4z16-0OPTJ4g",
+        authDomain: "list-todo-3278f.firebaseapp.com",
+        projectId: "list-todo-3278f",
+        storageBucket: "list-todo-3278f.appspot.com",
+        messagingSenderId: "733868430635",
+        appId: "1:733868430635:web:aaa48e45dfc32d0a03216e",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>

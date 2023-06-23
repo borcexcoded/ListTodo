@@ -1,0 +1,147 @@
+<style>
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(./images/pexels-angela-roma-7319325.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e74c3c;
+}
+.form-control {
+  display: flex;
+}
+.form-control input {
+  flex: 1;
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid #e74c3c;
+}
+.form-control button {
+  background-color: #858586;
+  border: 0px;
+}
+.form-control button:hover {
+  background-color: green;
+}
+.data-hour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem 1.5rem 3rem;
+  font-size: 16px;
+  
+}
+button {
+  background-color: darkorange;
+ 
+  border: 2px solid #102f5e;
+  padding: 0.2rem 0.4rem;
+  font: size 0.8rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border: 1px solid #76df76;
+}
+button:hover {
+  background-color: orangered;
+  color: white;
+}
+button i {
+  font: bold;
+  pointer-events: none;
+}
+input {
+  padding: 0.4rem 0.5rem;
+  border: 0px;
+  width: 350px;
+}
+#date {
+  flex: 1;
+}
+.hide {
+  display: none;
+}
+.todo-container {
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  width: 450px;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+.todo-container header {
+  padding: 0 1rem 1rem;
+  border-bottom: 2px solid #ccc;
+}
+header h1 {
+  padding-left: 10px;
+  border-left: 5px solid #e74c3c;
+}
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-control input {
+  margin-right: 0.8rem;
+}
+#cancel-edit-btn {
+  margin-top: 1rem;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.3rem 0.2rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+.todo h3 {
+  flex: 1;
+  font-size: 0.8rem;
+}
+.todo button {
+  margin-left: 0.4rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #ecf0f1aa;
+}
+.done {
+  background-color: green;
+}
+.done h3 {
+  color: white;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.todo button:hover,
+.done button {
+  background-color: #a4212100;
+  justify-content: center;
+  align-items: center;
+}
+.done button:hover {
+  background-color: #ecf0f1;
+  color: darkorange;
+}
+#todo-list {
+  max-height: 320px;
+  overflow: auto;
+  align-items: centers;
+  justify-content: center;
+}
